@@ -32,11 +32,11 @@ T2=transl2(5,6)*trot2(-30,'deg')
 % Determine the coordinate of the target object with respect to the world: W_P
 
 
-Note:
+% Note:
 % Do a hand sketch of both frames and the target object. Make sure you have a good intuition of what is happening here as you will need this a lot in the future. You can also play offline with other values to simplify calculations.
 
 % Camera pose wrt to world
-W_T_C = trot2(-30, 'deg') * transl2(0,1);
+W_T_C = transl2(0,1)*trot2(-30, 'deg');
 
 % Target object homogeneous coordinates wrt 'Camera' frameThere is a target object A, whose homogeneous coordinates in the camera coordinate frame  C_P is given by: 
 C_P = [1;0; 1]
