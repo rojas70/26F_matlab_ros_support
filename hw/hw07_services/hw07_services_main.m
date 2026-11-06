@@ -7,7 +7,7 @@ rosshutdown;
 pause(2);       
 
 %% Set IP address for master and node:
-masterHostIP % **Complete Code**
+masterHostIP "10.51.51.51"% **Complete Code**
 nodeHostIP = % **Complete Code**
 rosinit(masterHostIP, 11311, "NodeHost",nodeHostIP);
 
